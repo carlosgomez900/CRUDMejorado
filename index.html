@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="botón.css">
+    <link rel="stylesheet" href="registroa.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="principal.js" defer></script>
+    <title>CRUD</title>
+</head>
+
+<body>
+    <header> 
+        <h1 class="header-title">Registro de Clientes</h1>
+        
+     </header>
+    <main>
+        <button type="button" class="button blue mobile" id="registroCliente">Registro CRUD</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>e-mail</th>
+                    <th>consola</th>
+                    <th>juego</th>
+                    <th>accion</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Registro Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="nombre" data-index="new" class="modal-field" placeholder="nombre de Cliente"
+                        required>
+                    <input type="email" id="email" class="modal-field" placeholder="e-mail de Cliente" required>
+                    <input type="text" id="consola" class="modal-field" placeholder="consola de cliente" required>
+                    <input type="text" id="juego" class="modal-field" placeholder="juego de cliente" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="salvar" class="button green">Salvar</button>
+                    <button id="cancelar" class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Carlos Omar Gómez Guzmán
+    </footer>
+</body>
+
+</html>
